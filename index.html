@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-
+scale=1.0"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
+      rel="stylesheet"
+    />
+    <title>Copy to clipboard</title>
+  </head>
+  <body>
+    <div id="container">
+      <textarea name="name" rows="8" cols="80" id="copy-text">
+Enter your texte here.</textarea
+      >
+      <br />
+      <button id="button-copy">Copy text</button>
+      <br />
+      <textarea
+        name="name"
+        rows="8"
+        cols="80"
+        id="paste-text"
+        placeholder="Paste your text here..."
+      ></textarea>
+    </div>
+    <script type="text/javascript">
+      $(function () {
+        toastr.success("Hé, <b>ça marche !</b>", "Test");
+      });
+    </script>
+    <script type="text/javascript" src="index.js"></script>
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+  </body>
+</html>
